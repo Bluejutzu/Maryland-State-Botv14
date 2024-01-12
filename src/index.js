@@ -21,7 +21,6 @@ new CommandKit({
   devUserIds: ["368709086008573952", "953708302058012702"],
   eventsPath: `${__dirname}/events`,
   commandsPath: `${__dirname}/commands`,
-  validationsPath: `${__dirname}/validations`,
   bulkRegister: true,
 });
 client.once(Events.ClientReady, (readyClient) => {
