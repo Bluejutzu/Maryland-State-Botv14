@@ -5,8 +5,6 @@ const { Client, GatewayIntentBits, Events } = require("discord.js");
 const { CommandKit } = require("commandkit");
 const Bans = require("./models/bans.js");
 const keep_alive = require('./keep_alive.js')
-const express = require("express");
-const { port } = require("./config.json");
 
 const client = new Client({
   intents: [
@@ -29,15 +27,5 @@ client.once(Events.ClientReady, (readyClient) => {
   Bans.sync();
   console.log(`${client.user.username} is ready!`);
 });
-
-const app = express();
-
-app.get("/", (request, response) => {
-  return response.sendFile("index.html", { root: "." });
-});
-
-app.listen(port, () =>
-  console.log(`App listening at http://localhost:${port}`)
-);
 
 client.login(process.env.TOKEN);
