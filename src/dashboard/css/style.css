@@ -1,5 +1,13 @@
 /** @format */
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Poppins:wght@400;600&display=swap");
+
+* {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 5vh;
+}
+
 :root {
   --primary: #a73e40;
   --primary-content: #f8ecec;
@@ -26,6 +34,16 @@
   --warning-content: #000000;
   --error-content: #f8ecec;
 }
+
 body {
-  background-color: var(--primary-light);
+  background-color: var(--primary-dark);
+}
+.login {
+  text-decoration: none;
+}
+.headline {
+  font-weight: 800;
+  text-align: center;
+  padding: 0.8rem;
+  color: var(--primary-content);
 }
