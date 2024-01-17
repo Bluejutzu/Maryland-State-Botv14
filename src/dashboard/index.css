@@ -1,0 +1,31 @@
+/** @format */
+
+:root {
+  --primary: #a73e40;
+  --primary-content: #f8ecec;
+  --primary-dark: #823032;
+  --primary-light: #c15759;
+
+  --secondary: #a7763e;
+  --secondary-content: #f8f2ec;
+  --secondary-dark: #825c30;
+  --secondary-light: #c19057;
+
+  --background: #f1efef;
+  --foreground: #fbfbfb;
+  --border: #e2dddd;
+
+  --copy: #292323;
+  --copy-light: #6e5e5f;
+  --copy-lighter: #958484;
+
+  --success: #3ea73e;
+  --warning: #a7a73e;
+  --error: #a73e3e;
+  --success-content: #ecf8ec;
+  --warning-content: #000000;
+  --error-content: #f8ecec;
+}
+body {
+  background-color: var(--primary-light);
+}

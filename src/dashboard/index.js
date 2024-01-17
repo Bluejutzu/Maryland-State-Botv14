@@ -7,7 +7,7 @@ const app = express();
 
 try {
     app.get("/", (request, response) => {
-      return response.sendFile("index.html", { root: "." });
+      return response.sendFile("index.html", { root: "\src/dashboard" });
     });
 
     app.listen(port, () =>
