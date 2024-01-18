@@ -20,13 +20,13 @@
   --secondary-dark: #825c30;
   --secondary-light: #c19057;
 
-  --background: #f1efef;
-  --foreground: #fbfbfb;
-  --border: #e2dddd;
+  --background: #1e1515;
+  --foreground: #2d2020;
+  --border: #4b3535;
 
-  --copy: #292323;
-  --copy-light: #6e5e5f;
-  --copy-lighter: #958484;
+  --copy: #fcfbfb;
+  --copy-light: #dfd2d2;
+  --copy-lighter: #b59697;
 
   --success: #3ea73e;
   --warning: #a7a73e;
@@ -44,7 +44,7 @@
 }
 
 body {
-  background-color: var(--primary-dark);
+  background-color: var(--background);
 }
 
 header {
@@ -52,7 +52,9 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
-  background-color: var(--primary-light);
+  background-color: var(--foreground);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .logo {
@@ -88,13 +90,13 @@ header {
 }
 
 .nav__links li a:hover {
-  color: #0088a9;
+  color: #825c30;
 }
 
 .cta {
   margin-left: 20px;
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: var(--primary);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -102,7 +104,7 @@ header {
 }
 
 .cta:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: var(--primary-light);
 }
 
 /* Mobile Nav */
