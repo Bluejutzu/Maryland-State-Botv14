@@ -82,11 +82,19 @@ header {
 }
 
 .nav__links li {
-  padding: 0px 20px;
+  padding: 0px 2.5rem;
+  box-shadow: 0 4px 8px 0 var(--border), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  border: none;
 }
 
 .nav__links li a {
   transition: all 0.3s ease 0s;
+}
+
+.icon_bell:hover,
+.icon_check:hover {
+ 
 }
 
 .nav__links li a:hover {
@@ -97,7 +105,7 @@ header {
   margin-left: 20px;
   padding: 9px 25px;
   background-color: var(--primary);
-  border: none;
+  box-shadow: var(--border);
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
