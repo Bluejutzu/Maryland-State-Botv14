@@ -75,20 +75,21 @@ header {
 .cta,
 .overlay__content a {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 1;
+  font-weight: 300;
+  font-size: 1.2rem;
   color: var(--primary-content);
   text-decoration: none;
 }
 
 .nav__links li {
-  padding: 0px 2.5rem;
+  padding: 0px 2rem;
+  margin: 0px 0.2rem;
   background: var(--primary-light);
   border-radius: 5px;
   box-shadow: var(--copy-light);
 }
 .nav__links li:hover {
-  transition: ;
+  transition: ease-out, transform 1s ;
   background: var(--primary-dark);
 }
 
@@ -104,6 +105,7 @@ header {
 
 .icon_bell,
 .icon_check {
+  top: 3px;
   position: relative;
   display: inline-block;
 }
@@ -111,15 +113,15 @@ header {
 .icon_bell .content_bell,
 .icon_check .content_check {
   position: absolute;
-  top: 200; /* Adjust this value to control the initial position */
+  top: 20px; /* Adjust this value to control the initial position */
   left: 50%;
   transform: translateX(-50%) translateY(-150%);
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.icon_bell:hover .content_bell,
-.icon_check:hover .content_check {
+.nav__links li:hover .content_bell,
+.nav__links li:hover .content_check {
   opacity: 1;
   transform: translateX(-50%) translateY(30%);
 }

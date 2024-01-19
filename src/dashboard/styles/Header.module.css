@@ -1,0 +1,21 @@
+/* src/dashboard/styles/Header.module.css */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: var(--primary);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.logo {
+  margin-right: auto;
+  text-decoration: none;
+  color: var(--primary-content);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Add more styles as needed */
