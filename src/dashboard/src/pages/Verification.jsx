@@ -2,7 +2,7 @@
 
 // src/dashboard/pages/Verification.jsx
 import React from "react";
-import styles from "../styles/Verification.module.css"; // Import the corresponding styles
+import styles from "../assets/styles/MobileMenu.module.css"; // Import the corresponding styles
 
 const Verification = () => {
   return (
