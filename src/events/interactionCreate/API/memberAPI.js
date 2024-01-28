@@ -1,6 +1,6 @@
 /** @format */
 
-import { Interaction, Client, User, EmbedBuilder } from "discord.js";
+import { EmbedBuilder } from "discord.js";
 import { fetch } from "undici";
 
 module.exports = async (interaction, client) => {
