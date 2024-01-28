@@ -1,8 +1,7 @@
 /** @format */
 
-const { EmbedBuilder } = require("discord.js");
-require("dotenv/config");
-const { fetch } = require("undici");
+import { Interaction, Client, User, EmbedBuilder } from "discord.js";
+import { fetch } from "undici";
 
 module.exports = async (interaction, client) => {
   if (!interaction.isChatInputCommand()) return;
@@ -46,9 +45,9 @@ module.exports = async (interaction, client) => {
           name: "User Information",
           value: `Mention: ${user}\ Display Name: ${user.username}`,
         })
-        .addFields('Roles', user.roles.map((r) => `${r}`).join(" | "), true);
+        .addFields("Roles", user.roles.map((r) => `${r}`).join(" | "), true);
 
-        interaction.reply({ embeds: [memberEmbed] });
+      interaction.reply({ embeds: [memberEmbed] });
     }
   } catch (error) {
     console.log(error);
