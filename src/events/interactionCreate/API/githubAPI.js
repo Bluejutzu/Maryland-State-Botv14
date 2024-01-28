@@ -1,7 +1,7 @@
 /** @format */
 
 const { fetch } = require("undici");
-const { EmbedBuilder, Embed } = require("discord.js");
+const { EmbedBuilder, bold } = require("discord.js");
 
 module.exports = async (interaction, client) => {
   if (!interaction.isChatInputCommand()) return;
@@ -30,9 +30,10 @@ module.exports = async (interaction, client) => {
           .setColor("Blurple")
           .setAuthor({
             name: interaction.user.username,
-            iconURL: interaction.user.avatarURL,
           })
-          .setDescription(`Displaying Repository ${repo} from ${owner}`)
+          .setDescription(
+            `Displaying Repository ${bold(repo)} from ${bold(owner)}`
+          )
           .addFields(
             {
               name: "Respository Redirect",
