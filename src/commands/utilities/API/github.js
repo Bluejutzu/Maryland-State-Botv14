@@ -1,6 +1,6 @@
 /** @format */
 
-import { SlashCommandBuilder } from "discord.js";
+const { SlashCommandBuilder } = require("discord.js");
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -9,7 +9,8 @@ module.exports = {
     .addStringOption((option) =>
       option
         .setName("repo")
-        .setDescription("Usage: {user}/{repo_name} Ex: Bluejutzu/Dashboard")
+        .setDescription("Usage: {user}/{repo_name} Ex: Bluejutzu/Dashboard. Not case sensitive")
+        .setRequired(true)
     ),
   run: () => {},
   options: {

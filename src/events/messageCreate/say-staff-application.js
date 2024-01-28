@@ -1,6 +1,6 @@
 /** @format */
 
-import { Message } from "discord.js";
+const { Message } = require("discord.js");
 
 module.exports = (message, client) => {
   const lowerCaseContent = message.content.toLowerCase();

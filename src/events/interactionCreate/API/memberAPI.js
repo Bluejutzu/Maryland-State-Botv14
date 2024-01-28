@@ -1,7 +1,7 @@
 /** @format */
 
-import { EmbedBuilder } from "discord.js";
-import { fetch } from "undici";
+const { fetch } = require("undici");
+const { EmbedBuilder } = require("discord.js");
 
 module.exports = async (interaction, client) => {
   if (!interaction.isChatInputCommand()) return;
