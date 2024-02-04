@@ -4,7 +4,8 @@ require("dotenv/config");
 const { Client, GatewayIntentBits, Events } = require("discord.js");
 const { CommandKit } = require("commandkit");
 const Bans = require("./models/bans.js");
-const keep_alive = require('./keep_alive.js')
+const mongoose = require("mongoose");
+const keep_alive = require("./keep_alive.js");
 
 const client = new Client({
   intents: [
@@ -25,7 +26,8 @@ new CommandKit({
 });
 client.once(Events.ClientReady, (readyClient) => {
   Bans.sync();
-  console.log(`${client.user.username} is ready!`);
+  mongoose.connect(process.env.MONGODB_URI);
+  console.log(`${client.user.username} is ready! \ Connected to MongoDB`);
 });
 
 client.login(process.env.TOKEN);
