@@ -27,7 +27,7 @@ new CommandKit({
 client.once(Events.ClientReady, (readyClient) => {
   Bans.sync();
   mongoose.connect(process.env.MONGODB_URI);
-  console.log(`${client.user.username} is ready! \ Connected to MongoDB`);
+  console.log(`${client.user.username} is ready! Connected to MongoDB`);
 });
 
 client.login(process.env.TOKEN);
