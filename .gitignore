@@ -3,4 +3,3 @@ node_modules
 .DS_Store
 database.sqlite
 validations
-config.json
